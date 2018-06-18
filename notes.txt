@@ -1,0 +1,68 @@
+===Domain Objects===
+
+User
+    UserId
+    Name
+
+// later: Event
+    EventId
+    Name
+    StartDate
+    EndDate
+    UserId[]
+    // later: admin features
+
+List
+    ListId
+    UserId
+    // later: EventId
+
+ListItem
+    ListItemId
+    RequestingUserId
+    Name
+    Description
+    Link // later: multiple examples
+    PriceRange
+        LowPrice
+        HighPrice
+    Priority
+    ClaimingUserId // later: ability to split something (addtl users, % each, who will purchase)
+
+Notes (private)
+    ListItemId
+    UserId
+    Text
+
+Questions (visible to requester)
+    ListItemId
+    UserId
+    Text
+    Date
+
+Comments (visible to everyone except requester)
+    ListItemId
+    UserId
+    Text
+    Date
+
+===Pages===
+
+Dashboard
+    - link to My WishList
+    - link to My Shopping List
+    - links to other users' Wishlists
+    - activity feed // later: email notifications
+        - new items added
+        - new items claimed
+        - new comments/questions
+        
+My WishList
+
+_'s WishList
+
+My Shopping List
+
+
+
+
